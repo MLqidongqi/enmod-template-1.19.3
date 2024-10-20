@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "enmod",
+	"version": "${version}",
+	"name": "ENMOD",
+	"description": "极限国度，启动！ 我为极限国度代言【doge】",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/enmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"io.github.mlqidongqi.ENMOD"
+		],
+		"Client": [
+			"io.github.mlqidongqi.ENMODClient"
+		],
+		"fabric-datagen": [
+			"io.github.mlqidongqi.ENMODDataGenerator"
+		]
+	},
+	"mixins": [
+		"enmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.7",
+		"minecraft": "~1.19.3",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
