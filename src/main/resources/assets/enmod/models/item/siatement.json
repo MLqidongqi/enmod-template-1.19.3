@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "item.enmod-template-1.19.3:item/siatement"
+    "layer0": "enmod:item/siatement"
   }
 }
