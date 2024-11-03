@@ -1,5 +1,6 @@
 package io.github.mlqidongqi;
 
+import io.github.mlqidongqi.registry.ModItemGroup;
 import io.github.mlqidongqi.registry.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -20,6 +21,7 @@ public class ENMOD implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello world!");
+		ModItemGroup.registerModItemGroup();
 		ModItems.registerMODItems();
 	}
 }
